@@ -30,7 +30,7 @@ struct Window {
     // timing variables
     u64 last_second;
     u64 frames, fps, last_frame, frame_delta;
-    u64 ticks, tps, tick_remainder;
+    u64 ticks, tps, tick_remainder, target_tps;
 };
 
 // global window

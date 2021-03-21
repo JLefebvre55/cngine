@@ -171,7 +171,7 @@ void window_loop() {
         }
 
         // tick processing
-        const u64 NS_PER_TICK = (NS_PER_SECOND / 60);
+        const u64 NS_PER_TICK = (NS_PER_SECOND / window.target_tps);
         u64 tick_time = window.frame_delta + window.tick_remainder;
         while (tick_time > NS_PER_TICK) {
             _tick();

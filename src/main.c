@@ -107,6 +107,7 @@ void render() {
 }
 
 int main(int argc, char *argv[]) {
+    window.target_tps = 100;
     window_create(init, destroy, tick, update, render);
     window_loop();
 }

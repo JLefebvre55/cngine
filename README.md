@@ -1,26 +1,14 @@
-# Minecraft, but I made it in 48 hours*
+# Cngine
 
-\* I've actually updated it since - [see this commit for the 48 hour version](https://github.com/jdah/minecraft-weekend/tree/cb19738305804b5734faa7118c1c784f26ff9463).
+> Pronounced "SEE-(en)-jin"
 
-![screenshot](screenshots/1.png)
+A rudimentary attempt at a physics and graphics engine for simulations and video games written entirely in C.
 
-#### Features:
-- Infinite, procedurally generated world
-- Infinite height/depth
-- Day/night cycle
-- Biomes
-- ECS-driven player and entities with full collision and movement
-- Full RGB lighting
-- Full transparency + translucency support
-- Sprite blocks (flowers)
-- Animated blocks (water + lava)
-- Distance fog
-- A whole lot of different block types
-- More
+# Development
 
-#### Building
+## Building
 
-##### Unix-like
+## Unix-like
 `$ git clone --recurse-submodules https://github.com/jdah/minecraft-weekend.git`\
 `$ make`
 
@@ -39,6 +27,6 @@ The game binary, once built with `$ make`, can be found in `./bin/`.
 *Be sure* to run with `$ ./bin/game` out of the root directory of the repository.
 If you are getting "cannot open file" errors (such as "cannot find ./res/shaders/*.vs"), this is the issue. 
 
-##### Windows
+## Windows
 
-good luck 🤷‍♂️ probably try building under WSL and using an X environment to pass graphics through.
+WIP

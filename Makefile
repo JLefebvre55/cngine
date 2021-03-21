@@ -22,7 +22,7 @@ BIN = bin
 
 .PHONY: all clean
 
-all: dirs libs game
+all: dirs libs engine
 
 libs:
 	cd lib/cglm && cmake . -DCGLM_STATIC=ON && make
@@ -34,10 +34,10 @@ dirs:
 	mkdir -p ./$(BIN)
 
 run: all
-	$(BIN)/game
+	$(BIN)/cngine
 
-game: $(OBJ)
-	$(CC) -o $(BIN)/game $^ $(LDFLAGS)
+engine: $(OBJ)
+	$(CC) -o $(BIN)/cngine $^ $(LDFLAGS)
 
 %.o: %.c
 	$(CC) -o $@ -c $< $(CFLAGS)

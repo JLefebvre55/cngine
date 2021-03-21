@@ -1,6 +1,5 @@
 bin/game
 
-*.icloud
 .DS_Store
 .vscode
 
@@ -56,3 +55,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Potentially reusable assets
+reuse/

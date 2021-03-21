@@ -35,17 +35,17 @@ void renderer_init(struct Renderer *self) {
         });
 
 
-    self->block_atlas = blockatlas_create(
-        "res/images/blocks.png",
-        (ivec2s) {{ 16, 16 }}
-    );
+    // self->block_atlas = blockatlas_create(
+    //     "res/images/blocks.png",
+    //     (ivec2s) {{ 16, 16 }}
+    // );
 
-    self->textures[TEXTURE_CROSSHAIR] = texture_create_from_path("res/images/crosshair.png");
-    self->textures[TEXTURE_CLOUDS] = texture_create_from_path("res/images/clouds.png"); 
-    self->textures[TEXTURE_STAR] = texture_create_from_path("res/images/star.png");
-    self->textures[TEXTURE_SUN] = texture_create_from_path("res/images/sun.png");
-    self->textures[TEXTURE_MOON] = texture_create_from_path("res/images/moon.png");
-    self->textures[TEXTURE_HOTBAR] = texture_create_from_path("res/images/hotbar.png");
+    // self->textures[TEXTURE_CROSSHAIR] = texture_create_from_path("res/images/crosshair.png");
+    // self->textures[TEXTURE_CLOUDS] = texture_create_from_path("res/images/clouds.png"); 
+    // self->textures[TEXTURE_STAR] = texture_create_from_path("res/images/star.png");
+    // self->textures[TEXTURE_SUN] = texture_create_from_path("res/images/sun.png");
+    // self->textures[TEXTURE_MOON] = texture_create_from_path("res/images/moon.png");
+    // self->textures[TEXTURE_HOTBAR] = texture_create_from_path("res/images/hotbar.png");
 
     self->vao = vao_create();
     self->vbo = vbo_create(GL_ARRAY_BUFFER, true);
@@ -62,14 +62,14 @@ void renderer_destroy(struct Renderer *self) {
         shader_destroy(self->shaders[i]);
     }
 
-    blockatlas_destroy(&self->block_atlas);
+    // blockatlas_destroy(&self->block_atlas);
     vao_destroy(self->vao);
     vbo_destroy(self->vbo);
     vbo_destroy(self->ibo);
 }
 
 void renderer_update(struct Renderer *self) {
-    blockatlas_update(&self->block_atlas);
+    // blockatlas_update(&self->block_atlas);
 }
 
 void renderer_prepare(struct Renderer *self, enum RenderPass pass) {

@@ -2,7 +2,7 @@
 #define RENDERER_H
 
 #include "../util/util.h"
-#include "blockatlas.h"
+// #include "blockatlas.h"
 #include "gfx.h"
 #include "shader.h"
 #include "vao.h"
@@ -21,15 +21,15 @@ enum ShaderType {
     SHADER_BASIC_COLOR
 };
 
-#define TEXTURE_LAST TEXTURE_HOTBAR
-enum Textures {
-    TEXTURE_CROSSHAIR,
-    TEXTURE_CLOUDS,
-    TEXTURE_STAR,
-    TEXTURE_SUN,
-    TEXTURE_MOON,
-    TEXTURE_HOTBAR
-};
+// #define TEXTURE_LAST TEXTURE_HOTBAR
+// enum Textures {
+//     TEXTURE_CROSSHAIR,
+//     TEXTURE_CLOUDS,
+//     TEXTURE_STAR,
+//     TEXTURE_SUN,
+//     TEXTURE_MOON,
+//     TEXTURE_HOTBAR
+// };
 
 #define CAMERA_STACK_MAX 256
 
@@ -52,9 +52,9 @@ struct Renderer {
     enum ShaderType current_shader;
     struct Shader shader;
 
-    struct Texture textures[TEXTURE_LAST + 1];
+    // struct Texture textures[TEXTURE_LAST + 1];
 
-    struct BlockAtlas block_atlas;
+    // struct BlockAtlas block_atlas;
 
     vec4s clear_color;
 
